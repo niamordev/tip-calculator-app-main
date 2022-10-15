@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+
+<body>
+
+  <img id="logo" src="images/logo.svg" alt="">
+
+  <main>
+
+    <div class="div-bill-tip-people">
+
+    <div class="bill">
+      <h1>Bill</h1>
+      <input id="input-bill" type="number"size="20"  style="background-image:url(images/icon-dollar.svg);
+      background-position:left;background-repeat:no-repeat;padding-left:18px;width:175px;">
+    </div>
+
+    <div class="select-tip">
+      <h1>Select Tip %</h1>
+      <div class="grid-tip">
+        <button value="5"  class="no-selected" id="five-percent"> 5% </button>
+        <button value="10" class="no-selected" id="ten-percent"> 10% </button>
+        <button value="15" class="no-selected" id="fifteen-percent"> 15% </button>
+        <button value="25" class="no-selected" id="twenty-five-percent"> 25% </button>
+        <button value="50" class="no-selected" id="fifty-percent"> 50% </button>
+
+        <button  class="no-selected" id="btn-custom"><h2>Custom</h2>
+        <input id="input-number-custom" type="number"></button>
+
+      </div>
+    </div>
+
+
+    <div class="number-people">
+      <h1>Number of People</h1>
+      <input id="input-people" type="number"  style="background-image:url(images/icon-person.svg);
+      background-position:left;background-repeat:no-repeat;padding-left:18px;width:175px;">
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="div-resultat-tip">
+     
+    <div class="tip-amount-and-price">
+      <div class="tip-amount">
+        <h3>Tip Amount</h3>
+        <h4>/ person</h4>
+      </div>
+      <input type="text"  step="0.01" id="tip-amount-per-person" readonly>
+
+
+    </div>  
+    
+  
+    
+    
+
+    <div class="total-and-price">
+      <div class="total-txt">
+        <h3>Total</h3>
+        <h4>/ person</h4>
+      </div>
+      <input type="text" step="0.01" id="total-per-person"readonly>
+
+    </div>
+    
+    <input id="reset" nclick="reset()" type="reset">
+    <button id="calc" onclick="calc()"> Calcul</button>
+
+  </div>
+
+  </main>
+
+</body>
+
+<script src="calculs.js"></script>
+
+</html>
+  <!-- Bill
+
+  Select Tip %
+  
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  

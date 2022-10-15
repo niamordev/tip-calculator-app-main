@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+.color{
+    color: hsl(183, 100%, 15%);
+    color: hsl(186, 14%, 43%);
+    color: hsl(184, 14%, 56%);
+    color: hsl(185, 41%, 84%);
+    color: hsl(189, 41%, 97%);
+    color: hsl(0, 0%, 100%);
+    color:hsl(172, 67%, 45%);
+}
+
+input{
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+
+#logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    max-width: 100%;
+    padding: 50px;
+}
+
+
+h1{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+.bill{
+    width: 100%;
+}
+
+input{
+    min-width: none;
+    background-color:  hsl(185, 41%, 84%);
+    border: 0;
+    border-radius: 10px;
+    height: 33px;
+}
+
+
+#tip-amount-per-person,
+#total-per-person{
+    text-align: end;
+    width: 200px;
+    background-color: transparent;
+    font-size: 30px;
+    color: hsl(172, 67%, 45%);
+}
+
+
+
+
+.grid-tip{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row: 200px 200px;
+    text-align: center;
+    column-gap: 15px;
+    row-gap: 15px;
+
+}
+
+.grid-tip button{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.no-selected{
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+}
+
+
+
+.selected{
+    background-color: hsl(200, 61%, 65%);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+.grid-tip button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+
+
+
+
+
+#btn-custom{
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.grid-tip #btn-custom:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-resultat-tip{
+    margin-top: 70px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 40px;
+    
+}
+
+.div-resultat-tip .tip-amount-and-price{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.div-resultat-tip .total-and-price{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.div-resultat-tip button{
+    background-color:hsl(172, 67%, 45%);
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+}
+
+.div-resultat-tip h3{
+    color:hsl(0, 0%, 100%);
+}
+
+
+.div-resultat-tip h4{
+    color:hsl(185, 41%, 84%);
+}
+
+.div-resultat-tip h5{
+    color:hsl(172, 67%, 45%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#input-number-custom{
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+
+
+}
+
+#btn-custom:hover > #input-number-custom{
+    display: block;
+
+}
+
+#btn-custom:hover > h2{
+    display: none;
+
+}
+
+#input-number-custom:focus{
+    display: block;
+}
+
+
+#calc{
+    cursor: pointer;
+}
+
+#reset{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgb(172, 1, 1);
+    cursor: pointer;
+}
+
+
+
+@media (min-width:1000px) {
+    body{
+        width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        height: 350px;
+        padding: 30px;
+    }    
+
+    .total-and-price{
+        justify-content: space-between;
+        width: auto;
+    }
+
+
+
+    .grid-tip{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-row: 200px 200px;
+        text-align: center;
+        column-gap: 15px;
+        row-gap: 15px;
+    
+    }
+
+    .div-bill-tip-people{
+        width: 40%;
+        height: 300px;
+        padding: 5px;
+    }
+
+    .div-resultat-tip{
+        margin-top: 0;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 10px;
+        padding: 40px;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+
+    h1{
+        font-size: 18px;
+        margin: 0 0;
+    }
+
+    .total-txt{
+        width: 409px;
+    }
+
+    input{
+        min-width: none;
+        width: 10px;
+        background-color:  hsl(185, 41%, 84%);
+        border: 0;
+        border-radius: 10px;
+        height: 33px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
